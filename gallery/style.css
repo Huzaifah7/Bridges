@@ -1,0 +1,114 @@
+/* .container{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    background-position: center;
+    background-size: none;
+}
+.container-fluid{
+    background-color: rgb(250, 219, 161);
+}
+.nav-content{
+float: right;
+padding: ;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav{
+/* background-color: #EADFB4; */
+background-color: #41332B;
+padding: 2px 40px;
+padding-right: 100px;
+
+display: flex;
+align-items: center;
+}
+
+nav a{
+    color: #FAA300;
+    text-decoration: none;
+    
+}
+
+nav a:hover{
+    color: #41332B ;
+    /* background-color: #E8751A; */
+    background-color: #FAA300;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.logo{
+    flex: 1;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 120px;
+    margin-right: 10px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+.menu li{
+    padding: 13px 15px;
+    font-size: 18px;
+    font-weight: 25px;
+    text-decoration: none;
+}
+.toggle{
+    font-size: 30px;
+    display: none;
+}
+/* 
+.body-container {
+    width: 75%;
+    height: 100%;
+    position: absolute;
+} */
+
+/* .icons{
+    margin-left: 100px;
+color: #FAA300;
+} */
+
+.login{
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 18px;
+    font-size: x-large;
+    margin-right: -130px;
+    padding: 10px;
+}
+@media screen and (max-width: 600px) {
+    nav{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+    .menu{
+margin-top: 15px;
+display: none;
+    }
+    .menu.active, .toggle{
+      display: block;
+    }
+    .toggle{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+}
